@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="GB2312">
+    <title>css</title>
+
+    <script type="text/javascript">
+        //1
+        var name = window.prompt("please input。。。")
+        alert(name)
+
+        //2
+        var textName = function () {
+            return "function first...";
+        }
+        alert(textName())
+
+        //3
+        function text() {
+            return "funtion second..."
+        }
+
+        alert(text())
+
+        //4
+        var jsonTest = {
+            "name": "textName",
+            "age": "27"
+        }
+        alert(jsonTest.name + "-" + jsonTest.age)
+
+        //5
+        function clickText() {
+            alert("click mouse...")
+        }
+    </script>
+</head>
+<body>
+<button onclick="clickText()" style="color: red">click</button>
+</body>
+</html>

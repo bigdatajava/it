@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="GB2312">
+    <title>css</title>
+
+    <script type="text/javascript" src="jquery/jquery-1.8.3.js"></script>
+    <script type="text/javascript">
+        function clickText(){
+            $("#divText").css("color","red");
+        }
+        $(function (){
+            $("#buttonText").click(function (){
+                alert("jquery event text")
+            });
+        });
+    </script>
+</head>
+<body>
+<div onclick="clickText()" id="divText">div test</div>
+
+<button id="buttonText">submit</button>
+</body>
+</html>
